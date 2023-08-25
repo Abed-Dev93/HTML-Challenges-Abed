@@ -47,3 +47,5 @@
 - Radio button for: (complaint, suggestion).
 - Submit button.
 The main focus in this exercise is the HTML. Use minimal CSS to make the page readable and neat (colours, backgrounds, width, height, margin, padding.......) When completed push your file to github.
+
+<img src="img/html_challenge_01.png">
