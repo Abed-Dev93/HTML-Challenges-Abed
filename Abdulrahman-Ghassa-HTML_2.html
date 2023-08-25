@@ -1,13 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>HTML-2</title>
-    </head>
-    <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML-2</title>
+    <style>
+        body {
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        .ai-header {
+            background-color: rgb(29, 41, 41);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .brand-header {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            align-self: flex-start;
+        }
+
+        .header-nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            text-decoration: none;
+            font-size: 1.7em;
+            color: white;
+            margin: 20px;
+            text-transform: capitalize;
+        }
+
+        .header-nav a:hover {
+            color: orangered;
+        }
+
+        .ai-description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.4em;
+        }
+
+        .ai-definition,
+        .ai-cause,
+        .ai-future,
+        .ai-in-lebanon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .ai-definition-title,
+        .ai-cause-title,
+        .ai-future-title,
+        .ai-in-lebanon-title {
+            align-self: center;
+            font-size: 2em;
+            text-transform: capitalize;
+        }
+
+        .ai-definition-img,
+        .ai-cause-img,
+        .ai-future-img,
+        .ai-in-lebanon-img {
+            width: 650px;
+            height: 463px;
+            border-radius: 10%;
+        }
+
+        .ai-unordered-cause {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        .ai-unordered-cause-list {
+            margin: 15px;
+            padding: 25px 25px 25px 25px;
+            border: 4px solid yellow;
+            font-family: monospace, sans-serif;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 30%;
+            height: 135px;
+            width: 285px;
+            text-align: center;
+        }
+
+        .ai-unordered-cause-list-1 {
+            background-color: blueviolet;
+        }
+
+        .ai-unordered-cause-list-2 {
+            background-color: orangered;
+        }
+
+        .ai-unordered-cause-list-3 {
+            background-color: olivedrab;
+        }
+
+        .ai-unordered-cause-list-4 {
+            background-color: royalblue;
+        }
+
+        .ai-unordered-cause-list-5 {
+            background-color: grey;
+        }
+
+        .ai-footer {
+            background-color: rgb(29, 41, 41);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+        }
+
+        .ai-footer-title {
+            color: #fff;
+        }
+
+        .copyright {
+            color: yellow;
+        }
+
+        .input-search,
+        .button-search {
+            padding: 10px;
+            margin: 3px;
+        }
+
+        .button-search {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="ai-header">
+        <img class="brand-header" src="img/html-2-1.jpeg">
+        <nav class="header-nav">
+            <a class="nav-links" href="#ai">what is AI?</a>
+            <a class="nav-links" href="#why">why?</a>
+            <a class="nav-links" href="#future">future of AI</a>
+            <a class="nav-links" href="#ai-lebanon">AI in lebanon</a>
+        </nav>
+    </header>
+    <main class="ai-description">
+        <article class="ai-definition" id="ai">
+            <h2 class="ai-definition-title">what is artificial intelligence?</h2>
+            <img class="ai-definition-img" src="img/html-2-5.jpeg" alt="AI Definition">
+            <p class="ai-definition-text">
+                <Strong>Artificial intelligence (AI)</Strong> is the intelligence of <q>machines or software</q>, as opposed to the intelligence
+                of human beings or animals. <em>AI applications</em> include advanced web search engines <em>(e.g., Google Search),
+                recommendation systems (used by YouTube, Amazon, and Netflix)</em>, understanding human speech <em>(such as Siri
+                and Alexa), self-driving cars (e.g., Waymo), generative or creative tools (ChatGPT and AI art), and
+                competing at the highest level in strategic games (such as chess and Go)</em>.
+
+                <b>Artificial intelligence</b> was founded as an <u><i>academic discipline</i></u> in 1956. The field went through
+                multiple cycles of optimism followed by disappointment and loss of funding, but after 2012,
+                when deep learning surpassed all previous <u>AI techniques</u>, there was a vast increase in funding and
+                interest.
+            </p>
+        </article>
+        <article class="ai-cause" id="why">
+            <h2 class="ai-cause-title">why to use AI?</h2>
+            <img class="ai-cause-img" src="img/html-2-2.png" alt="Uses of AI"><br>
+            <ul class="ai-unordered-cause">
+                <li class="ai-unordered-cause-list ai-unordered-cause-list-1">automates repetitive learning<br>and
+                    discovery through data</li>
+                <li class="ai-unordered-cause-list ai-unordered-cause-list-2">adapts through progress-<br>ive learning
+                    algorithms</li>
+                <li class="ai-unordered-cause-list ai-unordered-cause-list-3">achieves incredible accuracy</li>
+                <li class="ai-unordered-cause-list ai-unordered-cause-list-4">gets the most out of data</li>
+                <li class="ai-unordered-cause-list ai-unordered-cause-list-5">facilitates our lifestyle</li>
+            </ul>
+        </article>
+        <article class="ai-future" id="future">
+            <h2 class="ai-future-title">the future of AI</h2>
+            <img class="ai-future-img" src="img/html-2-3.jpg" alt="Future Of AI">
+            <p class="ai-future-text">
+                <strong>The digital revolution</strong> has already changed how people <u>live</u>, <u>work</u>, and
+                <u>communicate</u>. And it’s only just
+                getting started. But the same technologies that have <b>the potential</b> to help billions of people
+                live
+                happier, healthier, and more productive lives are also creating new challenges for citizens and
+                governments around the world. From election meddling to data breaches and cyberattacks, recent events
+                have shown that technology is changing how we think about <em>privacy, national security, and maybe even
+                    democracy itself</em>. In this project, we examine <b>challenges in five key areas</b> that will
+                shape the future of
+                the digital age: justice system, impact on democracy, global security and international conflict, the
+                impact of automations and AI on the jobs marketplace, identity, and privacy.
+            </p>
+        </article>
+        <article class="ai-in-lebanon" id="ai-lebanon">
+            <h2 class="ai-in-lebanon-title">AI in lebanon</h2>
+            <img class="ai-in-lebanon-img" src="img/html-2-4.jpg" alt="AI in Lebanon">
+            <p class="ai-in-lebanon-text">
+                <b>The United Nations</b> is engaged in enhancing the use of new technologies for <em>sustainable
+                    development</em>. In September 2018, the <b>United Nations Secretary-General</b> launched a Strategy
+                on New
+                Technologies. It includes a commitment to support member states in building capacities and promoting
+                dialogue on normative and cooperation frameworks. <b>ESCWA</b>, through its technical cooperation
+                program, is
+                committed to provide <em>technical assistance</em> to its member states to boost national efforts
+                towards the
+                achievement of <u>the 2030 Development Agenda</u>.
+
+                <strong>The Ministry of State of Investment and Technology Affairs in Lebanon</strong> requested the
+                assistance of <b>ESCWA</b>
+                to develop a national strategy on <strong>artificial intelligence</strong> (AI) for the country. This
+                meeting will be
+                convened to stimulate discussion among national stakeholders. These discussions will provide a current
+                assessment of the national context of AI and enable the collection of information from represented
+                entities on their needs, plans and focus areas that should be included in the draft <em><u>AI
+                        strategy</u></em>.
+            </p>
+        </article>
+    </main>
+    <footer class="ai-footer">
+        <h3 class="ai-footer-title">Copyright <span class="copyright">&copy;</span> 2023-2024</h3>
+        <form class="search-for" action="https://www.google.com/search" method="get">
+            <input class="input-search" type="text" placeholder="search.." name="search">
+            <button class="button-search" type="submit">Search</button>
+        </form>
+    </footer>
+</body>
+
 </html>
