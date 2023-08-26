@@ -1,14 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link src="Abdulrahman-Ghassa-HTML_3.css" rel="stylesheet">
-        <title>HTML-3</title>
-    </head>
-    <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link src="Abdulrahman-Ghassa-HTML_3.css" rel="stylesheet">
+    <title>HTML-3</title>
+    <style>
+        body {
+            background-color: #344;
+            color: white;
+            font-size: 1.5em;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .header-info {
+            height: 350px;
+            position: relative;
+        }
+
+        .header-info-img {
+            height: 70%;
+            width: 100%;
+        }
+
+        .header-info-title,
+        .header-info-slogan {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            text-transform: capitalize;
+        }
+
+        .header-info-slogan {
+            top: 85px;
+        }
+
+        .header-info-nav {
+            position: absolute;
+            width: 100%;
+            height: 20%;
+            bottom: 25px;
+            border: 1px solid #344;
+            background-color: rgb(53, 49, 49);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-links {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+            align-self: center;
+        }
+
+        .header-links:hover {
+            color: yellow;
+        }
+
+        .content-info {
+            position: relative;
+        }
+
+        .menu,
+        .block {
+            width: 30%;
+            position: absolute;
+            left: 0;
+        }
+
+        .menu-title,
+        .block-title {
+            position: absolute;
+            text-transform: capitalize;
+            left: 60px;
+            font-weight: bold;
+        }
+        .block-title {
+            top: -80px;
+        }
+
+        .menu-title-list {
+            position: absolute;
+            text-transform: capitalize;
+            bottom: -520px;
+        }
+
+        .menu-title-item {
+            margin: 15px;
+            text-decoration: underline;
+        }
+
+        .content-text {
+            width: 60%;
+            position: absolute;
+            right: 20px;
+        }
+
+        .content-text-title {
+            text-transform: capitalize;
+        }
+
+        .block {
+            position: absolute;
+            top: 600px;
+            width: 20%;
+            height: auto;
+        }
+
+        .block-content {
+            position: absolute;
+        }
+
+        .subscription, .services {
+            position: absolute;
+            top: 450px;
+            left: 500px;
+            width: 25%;
+        }
+        .services {
+            left: 1100px;
+            border-left: 1px solid #fff;
+            padding-left: 30px;
+        }
+        .subscription button, .services button, .contact-us button {
+            color: #000;
+            background-color: gray;
+            padding: 20px;
+        }
+        .contact {
+            position: absolute;
+            bottom: -1850px;
+            width: 50%;
+            left: 400px;
+        }
+        .contact-us {
+            font-family: italic;
+            font-weight: bold;
+        }
+        .contact-us legend {
+            font-size: 1.6em;
+        }
+        .input-field {
+            padding: 17px;
+            margin: 7px;
+        }
+        .footer-info {
+            position: absolute;
+            bottom: -1400px;
+            width: 80%;
+            text-align: center;
+            border-top: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-info">
+            <img class="header-info-img" src="img/html-3-1.jpg" alt="Earth">
+            <h1 class="header-info-title">discover the world</h1>
+            <p class="header-info-slogan">come with us</p>
+            <nav class="header-info-nav">
+                <a class="header-links" href="#home">home</a>
+                <a class="header-links" href="#enquiry">contact</a>
+                <a class="header-links" href="#">new page 1</a>
+                <a class="header-links" href="#">new page 2</a>
+                <a class="header-links" href="#">new page 3</a>
+                <a class="header-links" href="#">new page 4</a>
+            </nav>
+        </header>
+        <main class="content-info">
+            <aside class="menu">
+                <h2 class="menu-title">main menu</h2>
+                <ul class="menu-title-list">
+                    <li class="menu-title-item">menu item 1</li>
+                    <li class="menu-title-item">menu item 2</li>
+                    <li class="menu-title-item">menu item 3</li>
+                    <li class="menu-title-item">menu item 4</li>
+                    <li class="menu-title-item">menu item 5</li>
+                    <li class="menu-title-item">menu item 6</li>
+                    <li class="menu-title-item">menu item 7</li>
+                    <li class="menu-title-item">menu item 8</li>
+                    <li class="menu-title-item">menu item 9</li>
+                </ul>
+            </aside>
+            <article class="content-text" id="home">
+                <h2 class="content-text-title">gallery</h2>
+                <hr>
+                <p class="content-text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                    laborum veniam in asperiores, quia expedita libero culpa repellendus, numquam commodi magnam tempora
+                    quod consequatur illum odit eius quisquam labore. Sit voluptatem, molestias explicabo amet porro
+                    culpa quibusdam aspernatur, commodi sapiente aliquid eius aut ipsa beatae libero dolorum aliquam
+                    autem quisquam adipisci nostrum non. Quam, saepe odit. Distinctio aliquid natus quia harum maiores
+                    cupiditate ratione minima quos, quibusdam hic impedit, possimus atque unde qui! Similique nisi
+                    voluptas, veniam in, doloremque deserunt ipsa et modi numquam quas velit qui excepturi voluptatibus
+                    ad consectetur reiciendis maxime eaque cumque dolor? Velit ducimus obcaecati laboriosam eum officiis
+                    facere?
+                </p>
+            </article>
+            <aside class="block">
+                <h2 class="block-title">block</h2>
+                <p class="block-contemt">
+                    Enter block content here.. <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sunt quibusdam similique provident
+                    asperiores aliquid soluta ex error ea tempora, qui a itaque architecto! Culpa asperiores veritatis
+                    aspernatur deleniti voluptatem impedit fugiat, officiis itaque totam debitis consectetur blanditiis
+                    rem.
+                </p>
+            </aside>
+            <article class="subscription">
+                <h2 class="subscription-title">subscription</h2>
+                <p class="subscription-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nihil culpa labore non aliquid
+                    veniam provident iste perferendis ipsam asperiores odit sequi aperiam, quos, architecto velit! Atque
+                    accusamus minus dolores quisquam error itaque neque ullam, mollitia ratione non impedit vero!
+                </p><br><br>
+                <button>Read more</button>
+            </article>
+            <article class="services">
+                <h2 class="services-title">other services</h2>
+                <p class="services-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
+                    reprehenderit aspernatur voluptas distinctio placeat totam vitae soluta id? Ducimus similique cumque
+                    officia quod nam delectus iste, aperiam adipisci odit et recusandae, tempore in quasi quam veniam
+                    doloribus laboriosam perferendis impedit.</p><br>
+                    <button>Read more</button>
+            </article>
+            <article class="contact" id="enquiry">
+                <form class="contact-us" action="" method="get">
+                    <fieldset>
+                        <legend>Contact us</legend>
+                        <label for="name" class="input-label">Your Name: </label>
+                        <input class="input-field" type="text" name="name" id="name" placeholder="full name.."><br>
+                        <label for="email" class="input-label">E-mail: </label>
+                        <input class="input-field" type="email" name="email" id="email" placeholder="e-mail.."><br>
+                        <p>Enquiry For: <br>
+                        <label for="complaint" class="input-label">Complaint</label>
+                        <input class="input-field" type="radio" name="enquiry" id="complaint">
+                        <label for="suggestion" class="input-label">Suggestion</label>
+                        <input class="input-field" type="radio" name="enquiry" id="suggestion"></p>
+                        <p>Please type your message below: <br>
+                        <textarea class="input-field" name="comment" id="comment" cols="40" rows="20" placeholder="type message.."></textarea></p>
+                        <button type="submit">Send Message</button>
+                    </fieldset>
+                </form> 
+            </article>
+        </main>
+        <footer class="footer-info">
+            <p class="footer-info-copy">Copyright &copy; 2014.</p>
+        </footer>
+    </div>
+</body>
+
 </html>
